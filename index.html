@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.jpg" type="image/jpeg">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo" style="color: #000080; font-size: 1.25rem;">
+                <img src="./assets/new-logo-1.png" alt="company logo">
+                <!-- Insight<span style="color: #FFD700;font-size: 1.6rem;">Chronicle</span> -->
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="all" onclick="onNavItemclick('all')">ALL</li>
+                    <li class="hover-link nav-item" id="Technology" onclick="onNavItemclick('Technology')">Technology</li>
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemclick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemclick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemclick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="Education" onclick="onNavItemclick('Education')">Education</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <footer>
+        <div class="copyright">
+            Copyright ©2023 All rights reserved |<br> This<span style="color: #000080;"> News Website</span> is made by <span>Harsh Ahuja</span>.
+        </div>
+        <div class="social-media">
+            <ul style="display: flex; gap: 20px;">
+                <li>
+                    <a href="https://www.instagram.com/harshahuja477/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/harsh-ahuja-3a7691217/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/harshahuja186" target="_blank"><i class="fa-brands fa-square-github fa-2xl"></i></a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ca16b26b48.js" crossorigin="anonymous"></script>
+</body>
+</html> 
